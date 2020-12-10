@@ -1,0 +1,28 @@
+<table style="margin-left: auto; margin-right: auto">
+    <tr>
+        <th>OOP</th>
+        <th>Web</th>
+        <th>Algorithms</th>
+        <th>Average</th>
+    </tr>
+    {% for i in arr %}
+        <tr>
+            {% for val in i %}
+                <td>{{ val }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+<div class="container" style="margin-top: 5%">
+    <div class="row">
+        <form style="margin-left: auto; margin-right: auto" action="sortAsc" method="get">
+            <input type="submit" class="btn btn-primary" value="sortAsc">
+        </form>
+        <form style="margin-left: auto; margin-right: auto" action="/" method="get">
+            <input type="submit" class="btn btn-info" value="Main page">
+        </form>
+        <form style="margin-left: auto; margin-right: auto" action="sortDesc" method="get">
+            <input type="submit" class="btn btn-primary" value="sortDesc">
+        </form>
+    </div>
+</div>
